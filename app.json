@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "React-Native-CMA-App",
+    "name": "CMA",
+    "scheme": "CMA",
     "slug": "React-Native-CMA-App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
