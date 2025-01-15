@@ -20,8 +20,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = () => {
-    // Logic for login (add validation, authentication here)
-    router.push("/(auth)/login");
+    router.push("/(tabs)/home");
   };
 
   return (
