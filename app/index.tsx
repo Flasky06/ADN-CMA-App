@@ -1,20 +1,20 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
+import { router } from "expo-router";
+import { cmaLogo } from "@/constants/assets";
 
-export default function HomeScreen() {
-  const router = useRouter();
-
+const App = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <StatusBar
-        barStyle="light-content"
-        backgroundColor="#0ccc"
+        barStyle="dark-content"
+        backgroundColor="#0cc"
         translucent={true}
       />
       <View style={styles.container}>
+        <Image source={cmaLogo} style={styles.logo} />
         <Text style={styles.title}>CMA</Text>
         <Text style={styles.subtitle}>Catholic Men's Association</Text>
         <TouchableOpacity
@@ -26,12 +26,12 @@ export default function HomeScreen() {
       </View>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#0cc",
+    backgroundColor: "#fff", // White background
   },
   container: {
     flex: 1,
@@ -39,30 +39,37 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 16,
   },
+  logo: {
+    width: 150,
+    height: 150,
+    marginBottom: 20,
+  },
   title: {
-    color: "#fff",
+    color: "#0ccc",
     fontSize: 64,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 8,
   },
   subtitle: {
-    color: "#fff",
+    color: "#0ccc",
     fontSize: 24,
     textAlign: "center",
     marginBottom: 16,
   },
   button: {
-    backgroundColor: "#fff",
+    backgroundColor: "#0ccc",
     borderRadius: 8,
     paddingVertical: 12,
     paddingHorizontal: 54,
     marginTop: 40,
   },
   buttonText: {
-    color: "#0cc",
+    color: "#fff", // White text
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
   },
 });
+
+export default App;
