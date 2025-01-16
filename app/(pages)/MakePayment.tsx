@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Register = () => {
+const MakePayment = () => {
   return (
     <View>
-      <Text>Register</Text>
+      <Text>MakePayment</Text>
     </View>
   );
 };
 
-export default Register;
+export default MakePayment;
 
 const styles = StyleSheet.create({});

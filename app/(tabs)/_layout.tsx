@@ -44,6 +44,16 @@ const TabLayout = () => {
         }}
       />
       <Tabs.Screen
+        name="calender"
+        options={{
+          title: "Calendar",
+          headerShown: false,
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome5 name="calendar" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",

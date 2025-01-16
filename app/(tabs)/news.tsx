@@ -1,9 +1,8 @@
 import React from "react";
-import { StyleSheet, View, FlatList, Text } from "react-native";
+import { StyleSheet, StatusBar, View, FlatList, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StatusBar } from "expo-status-bar";
 import NewsCard from "@/components/NewsCard";
-import { newsArticles } from "@/constants/NewsArticle";
+import { newsArticles } from "@/constants/data";
 
 const News = () => {
   const renderItem = ({ item }) => (
